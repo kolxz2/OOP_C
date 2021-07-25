@@ -1,0 +1,5 @@
+﻿Build started...
+1>------ Build started: Project: OOP C++, Configuration: Debug x64 ------
+1>Lesson83.cpp
+1>OOP C++.vcxproj -> C:\Users\kolxz2\source\repos\OOP C++\x64\Debug\OOP C++.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
