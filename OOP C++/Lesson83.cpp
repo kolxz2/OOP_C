@@ -1,6 +1,6 @@
-#include "lESSON83.h"
+#include "Lesson83.h"
 
-void lESSON83::Creater()
+void Lesson83::Creater()
 {
 	this->data = new int[this->Size];
 	for (int i = 0; i < this->Size; i++)
@@ -10,20 +10,20 @@ void lESSON83::Creater()
 	std::cout << "Construction start" << this << "\n";
 }
 
-lESSON83::lESSON83()
+Lesson83::Lesson83()
 {
 	this->Size = 0;
-	lESSON83::Creater();
+	Lesson83::Creater();
 	std::cout << "Construction start\n";
 }
 
-lESSON83::lESSON83(int value)
+Lesson83::Lesson83(int value)
 {
 	this->Size = value;
-	lESSON83::Creater();
+	Lesson83::Creater();
 }
 
-lESSON83::lESSON83(const lESSON83& other)
+Lesson83::Lesson83(const Lesson83& other)
 {
 	this->Size = other.Size;
 	this->data = new int[other.Size];
@@ -34,7 +34,7 @@ lESSON83::lESSON83(const lESSON83& other)
 	std::cout << "Called constructer for copy" << this << "\n" << std::endl;
 }
 
-lESSON83& lESSON83::operator=(const lESSON83& other)
+Lesson83& Lesson83::operator=(const Lesson83& other)
 {
 	this->Size = other.Size;
 	if (this->data != nullptr)
@@ -52,7 +52,7 @@ lESSON83& lESSON83::operator=(const lESSON83& other)
 }
 
 
-void lESSON83::Print()
+void Lesson83::Print()
 {
 	for (int i = 0; i < this->Size; i++)
 	{
@@ -60,7 +60,7 @@ void lESSON83::Print()
 	}
 	std::cout << "Printing is end" << this <<"\n";
 }
-lESSON83::~lESSON83()
+Lesson83::~Lesson83()
 {
 	delete[] data;
 	std::cout << "Distruction start"<< this <<"\n";
